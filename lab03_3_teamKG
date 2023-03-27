@@ -1,0 +1,9 @@
+FROM nginx:mainline-alpine
+
+
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
+
+# docker run -p 8022:80 -d --mount type=bind,source="C:\Users\exc1\Desktop\IIT_labs\lab03KG",target="/usr/share/nginx/html" lab03_3_teamkg
+
