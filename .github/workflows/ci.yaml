@@ -19,6 +19,7 @@ jobs:
           root: web/
 
   docker:
+    needs: [linter]
     runs-on: ubuntu-latest
     steps:
       -
