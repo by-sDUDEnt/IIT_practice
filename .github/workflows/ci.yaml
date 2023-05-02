@@ -6,6 +6,12 @@ on:
       - 'lab4'
 
 jobs:
+  liner: 
+  - name: HTML5Validator
+      uses: Cyb3r-Jak3/html5validator-action
+      with:
+        root: web/
+
   docker:
     runs-on: ubuntu-latest
     steps:
