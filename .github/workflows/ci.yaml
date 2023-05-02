@@ -9,6 +9,9 @@ jobs:
   linter: 
     runs-on: ubuntu-latest
     steps:
+      -
+        name: Checkout
+        uses: actions/checkout@v3
       - 
         name: HTML5Validator
         uses: Cyb3r-Jak3/html5validator-action@master
